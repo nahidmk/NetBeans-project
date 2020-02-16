@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="conunt_prime_number.FXMLDocumentController">
+   <children>
+      <Label layoutX="82.0" layoutY="121.0" text="result" />
+      <Label fx:id="lable" layoutX="50.0" layoutY="362.0" prefHeight="17.0" prefWidth="501.0" />
+      <MenuButton layoutX="32.0" layoutY="26.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#open" text="open" />
+          <MenuItem mnemonicParsing="false" onAction="#cahck" text="cahck" />
+        </items>
+      </MenuButton>
+      <TextArea fx:id="t1" layoutX="164.0" layoutY="121.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="using_chack_box.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="t1" layoutX="272.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="60.0" layoutY="128.0" mnemonicParsing="false" onAction="#show" text="show" />
+      <Button layoutX="60.0" layoutY="200.0" mnemonicParsing="false" onAction="#reset" text="reset" />
+      <CheckBox layoutX="112.0" layoutY="29.0" mnemonicParsing="false" onAction="#student" text="student" />
+      <CheckBox layoutX="208.0" layoutY="29.0" mnemonicParsing="false" onAction="#single" text="single" />
+      <CheckBox layoutX="300.0" layoutY="29.0" mnemonicParsing="false" onAction="#job" text="job less" />
+      <CheckBox layoutX="390.0" layoutY="29.0" mnemonicParsing="false" onAction="#not_stu" text="not student" />
+   </children>
+</AnchorPane>

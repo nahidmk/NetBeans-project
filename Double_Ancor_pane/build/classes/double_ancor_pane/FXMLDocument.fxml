@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="double_ancor_pane.FXMLDocumentController">
+   <children>
+      <StackPane layoutX="-2.0" layoutY="2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane fx:id="p1" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="89.0" prefHeight="29.0" prefWidth="100.0" text="User Name">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="184.0" prefHeight="39.0" prefWidth="100.0" text="Password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p1t1" layoutX="130.0" layoutY="69.0" prefHeight="74.0" prefWidth="327.0" promptText="User Name">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p1t2" layoutX="134.0" layoutY="175.0" prefHeight="60.0" prefWidth="318.0" promptText="Password">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="64.0" layoutY="275.0" mnemonicParsing="false" onAction="#login" prefHeight="29.0" prefWidth="52.0" text="Login" />
+                  <Button layoutX="188.0" layoutY="275.0" mnemonicParsing="false" onAction="#clene" prefHeight="29.0" prefWidth="52.0" text="clene" />
+                  <Button layoutX="323.0" layoutY="273.0" mnemonicParsing="false" onAction="#signup" prefHeight="29.0" prefWidth="52.0" text="signup" />
+                  <Label fx:id="p1la" layoutX="12.0" layoutY="345.0" prefHeight="29.0" prefWidth="585.0">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="163.0" layoutY="6.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p2" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="89.0" prefHeight="29.0" prefWidth="100.0" text="User Name">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="26.0" layoutY="184.0" prefHeight="39.0" prefWidth="100.0" text="Password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p2t1" layoutX="131.0" layoutY="79.0" prefHeight="39.0" prefWidth="327.0" promptText="User Name">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p2t2" layoutX="136.0" layoutY="182.0" prefHeight="43.0" prefWidth="318.0" promptText="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Label layoutX="33.0" layoutY="255.0" prefHeight="39.0" prefWidth="126.0" text="Re-Password">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="p2t3" layoutX="174.0" layoutY="253.0" prefHeight="43.0" prefWidth="318.0" promptText="Password">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="p2la" layoutY="350.0" prefHeight="43.0" prefWidth="600.0">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="114.0" layoutY="310.0" mnemonicParsing="false" onAction="#save" text="Save" />
+                  <Button layoutX="232.0" layoutY="310.0" mnemonicParsing="false" onAction="#p1clene" text="clene" />
+                  <Label layoutX="163.0" layoutY="6.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="333.0" layoutY="310.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p3" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="163.0" layoutY="6.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="491.0" layoutY="136.0" mnemonicParsing="false" onAction="#p3exit" text="Exit" />
+                  <Button layoutX="383.0" layoutY="136.0" mnemonicParsing="false" onAction="#serch" text="serch" />
+                  <Button layoutX="274.0" layoutY="136.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+                  <Button layoutX="169.0" layoutY="136.0" mnemonicParsing="false" onAction="#update" text="update" />
+                  <Button layoutX="59.0" layoutY="136.0" mnemonicParsing="false" onAction="#p3new" text="new" />
+               </children>
+            </Pane>
+            <Pane fx:id="p4" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="163.0" layoutY="6.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="63.0" text="ID">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="42.0" layoutY="104.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="142.0" text="Father's Name">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="54.0" layoutY="217.0" text="Address">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="56.0" layoutY="181.0" text="Email">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="p4la" layoutX="8.0" layoutY="369.0" prefHeight="17.0" prefWidth="585.0" />
+                  <TextField fx:id="p4t1" layoutX="97.0" layoutY="63.0" prefHeight="25.0" prefWidth="453.0" promptText="ID" />
+                  <TextField fx:id="p4t2" layoutX="97.0" layoutY="101.0" prefHeight="25.0" prefWidth="453.0" promptText="Name" />
+                  <TextField fx:id="p4t3" layoutX="136.0" layoutY="139.0" prefHeight="25.0" prefWidth="453.0" promptText="Father;s name" />
+                  <TextField fx:id="p4t4" layoutX="124.0" layoutY="178.0" prefHeight="25.0" prefWidth="453.0" promptText="Email" />
+                  <TextArea fx:id="p4t5" layoutX="136.0" layoutY="217.0" prefHeight="101.0" prefWidth="175.0" promptText="Address" />
+                  <Label layoutX="59.0" layoutY="331.0" text="Gender">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <RadioButton layoutX="236.0" layoutY="332.0" mnemonicParsing="false" onAction="#female" text="Female">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton layoutX="124.0" layoutY="332.0" mnemonicParsing="false" onAction="#male" text="Male" toggleGroup="$gender" />
+                  <Button layoutX="483.0" layoutY="319.0" mnemonicParsing="false" onAction="#p4reset" text="recet" />
+                  <Button layoutX="401.0" layoutY="319.0" mnemonicParsing="false" onAction="#p4save" text="save" />
+                  <Button layoutX="27.0" layoutY="22.0" mnemonicParsing="false" onAction="#p4exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p5" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="163.0" layoutY="6.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="83.0" text="Name">
+                     <font>
+                        <Font name="System Bold Italic" size="37.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p5t1" layoutX="143.0" layoutY="85.0" prefHeight="25.0" prefWidth="409.0" promptText="Student Name">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="376.0" layoutY="299.0" mnemonicParsing="false" onAction="#p5Exit" text="Exit" />
+                  <Button layoutX="211.0" layoutY="299.0" mnemonicParsing="false" onAction="#p5cencle" text="cencle" />
+                  <Button layoutX="64.0" layoutY="299.0" mnemonicParsing="false" onAction="#p5delete" text="Delete" />
+                  <Label fx:id="p5la" layoutX="14.0" layoutY="369.0" prefHeight="17.0" prefWidth="585.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="p6" prefHeight="203.0" prefWidth="288.0">
+               <children>
+                  <Label layoutX="12.0" layoutY="16.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="85.0" text="do you really want to delete this Item" />
+                  <Button layoutX="101.0" layoutY="155.0" mnemonicParsing="false" onAction="#p6ok" text="OK" />
+                  <Button layoutX="169.0" layoutY="155.0" mnemonicParsing="false" onAction="#p6no" text="No" />
+               </children>
+            </Pane>
+            <Pane fx:id="p7" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="179.0" layoutY="-5.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="79.0" layoutY="52.0" text="ID">
+                     <font>
+                        <Font name="System Bold Italic" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="138.0" text="Information">
+                     <font>
+                        <Font name="System Bold Italic" size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p7t1" layoutX="151.0" layoutY="73.0" prefHeight="25.0" prefWidth="285.0" promptText="ID">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </TextField>
+                  <TextArea fx:id="p7t2" layoutX="227.0" layoutY="154.0" prefHeight="200.0" prefWidth="238.0" promptText="Information">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="p7la" layoutX="25.0" layoutY="369.0" prefHeight="17.0" prefWidth="572.0" />
+                  <Button layoutX="53.0" layoutY="293.0" mnemonicParsing="false" onAction="#p7Exit" text="Exit" />
+                  <Button layoutX="53.0" layoutY="241.0" mnemonicParsing="false" onAction="#p7reset" text="reset" />
+                  <Button layoutX="53.0" layoutY="194.0" mnemonicParsing="false" onAction="#p7serch" text="Serch" />
+               </children>
+            </Pane>
+            <Pane fx:id="p8" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="p8t1" layoutX="158.0" layoutY="90.0" prefHeight="25.0" prefWidth="257.0" promptText="ID">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="158.0" layoutY="9.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="235.0" text="Address">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="49.0" layoutY="153.0" text="Email">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="88.0" text="ID">
+                     <font>
+                        <Font name="System Bold Italic" size="31.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p8t2" layoutX="172.0" layoutY="158.0" prefHeight="25.0" prefWidth="257.0" promptText="Email">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </TextField>
+                  <TextArea fx:id="p8t3" layoutX="173.0" layoutY="218.0" prefHeight="153.0" prefWidth="175.0" promptText="Address">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </TextArea>
+                  <Button layoutX="403.0" layoutY="323.0" mnemonicParsing="false" onAction="#p8Exit" text="Exit" />
+                  <Button layoutX="403.0" layoutY="269.0" mnemonicParsing="false" onAction="#p8reset" text="Reset" />
+                  <Button layoutX="403.0" layoutY="223.0" mnemonicParsing="false" onAction="#p8update" text="Update" />
+                  <Label fx:id="p8la" layoutX="14.0" layoutY="377.0" prefHeight="17.0" prefWidth="585.0" />
+                  <Label layoutX="65.0" layoutY="66.0" text="Name for Identy ">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p8t4" layoutX="152.0" layoutY="64.0" prefHeight="25.0" prefWidth="257.0" promptText="Name" />
+               </children>
+            </Pane>
+            <Pane fx:id="p9" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="162.0" layoutY="-1.0" prefHeight="50.0" prefWidth="257.0" text="Welcome in MK">
+                     <font>
+                        <Font name="AR DECODE" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="146.0" prefHeight="30.0" prefWidth="363.0" text="do you really want to update this item">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="290.0" layoutY="243.0" mnemonicParsing="false" onAction="#p9no" text="No" />
+                  <Button layoutX="177.0" layoutY="243.0" mnemonicParsing="false" onAction="#p9ok" text="OK" />
+                  <Label fx:id="p9la" layoutX="32.0" layoutY="369.0" prefHeight="17.0" prefWidth="395.0" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

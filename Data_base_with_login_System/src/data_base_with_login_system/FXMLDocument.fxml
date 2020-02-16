@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_base_with_login_system.FXMLDocumentController">
+   <children>
+      <Label layoutX="71.0" layoutY="52.0" text="User name" />
+      <Label layoutX="71.0" layoutY="150.0" text="Password" />
+      <TextField fx:id="t1" layoutX="151.0" layoutY="48.0" prefHeight="25.0" prefWidth="400.0" promptText="User name" />
+      <PasswordField fx:id="t2" layoutX="151.0" layoutY="146.0" prefHeight="25.0" prefWidth="400.0" promptText="passwoed" />
+      <Button layoutX="177.0" layoutY="339.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Button layoutX="300.0" layoutY="339.0" mnemonicParsing="false" onAction="#cencel" text="Cencel" />
+      <StackPane layoutY="1.0" prefHeight="383.0" prefWidth="582.0">
+         <children>
+            <Pane fx:id="pane1" prefHeight="290.0" prefWidth="463.0">
+               <children>
+                  <Label layoutX="67.0" layoutY="27.0" text="ID" />
+                  <Label layoutX="63.0" layoutY="92.0" text="Name" />
+                  <Label layoutX="42.0" layoutY="136.0" text="Address" />
+                  <TextField fx:id="p1t1" layoutX="108.0" layoutY="23.0" />
+                  <TextField fx:id="p1t2" layoutX="108.0" layoutY="88.0" prefHeight="25.0" prefWidth="309.0" />
+                  <TextArea fx:id="p1t3" layoutX="108.0" layoutY="136.0" prefHeight="200.0" prefWidth="200.0" />
+                  <Button layoutX="365.0" layoutY="167.0" mnemonicParsing="false" onAction="#p1Save" text="Save" />
+                  <Button layoutX="365.0" layoutY="224.0" mnemonicParsing="false" onAction="#p1reset" text="reset" />
+                  <Label fx:id="p1la" layoutX="28.0" layoutY="345.0" prefHeight="17.0" prefWidth="549.0" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fileoparatio.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="t1" layoutX="284.0" layoutY="78.0" prefHeight="200.0" prefWidth="200.0" />
+      <MenuButton fx:id="b1" layoutX="95.0" layoutY="109.0" mnemonicParsing="false" onAction="#event" text="Event">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#reset" text="reset" />
+          <MenuItem mnemonicParsing="false" onAction="#save" text="save" />
+            <MenuItem mnemonicParsing="false" onAction="#show" text="show" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

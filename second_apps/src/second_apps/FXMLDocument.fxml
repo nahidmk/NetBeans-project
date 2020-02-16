@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="second_apps.FXMLDocumentController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane fx:id="p1" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="149.0" layoutY="14.0" text="welcome in mk">
+                     <font>
+                        <Font name="AR JULIAN" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="102.0" text="User name">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="224.0" text="Password">
+                     <font>
+                        <Font name="System Bold Italic" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="p1la" layoutX="14.0" layoutY="369.0" prefHeight="17.0" prefWidth="579.0">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p1t1" layoutX="168.0" layoutY="100.0" prefHeight="25.0" prefWidth="348.0" promptText="User name">
+                     <font>
+                        <Font name="System Bold Italic" size="26.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p1t2" layoutX="168.0" layoutY="212.0" prefHeight="25.0" prefWidth="338.0" promptText="password">
+                     <font>
+                        <Font name="System Bold Italic" size="26.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="97.0" layoutY="304.0" mnemonicParsing="false" onAction="#login" text="Logni" />
+                  <Button layoutX="228.0" layoutY="304.0" mnemonicParsing="false" onAction="#p1reset" text="Reset" />
+                  <Button layoutX="360.0" layoutY="304.0" mnemonicParsing="false" onAction="#signup" text="Signup" />
+               </children>
+            </Pane>
+            <Pane fx:id="p2" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="p2la" layoutX="14.0" layoutY="369.0" prefHeight="17.0" prefWidth="579.0">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="149.0" layoutY="13.0" text="welcome in mk">
+                     <font>
+                        <Font name="AR JULIAN" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="48.0" layoutY="241.0" text="Re-password">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="37.0" layoutY="163.0" text="Password">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="88.0" text="User name">
+                     <font>
+                        <Font name="System Bold Italic" size="28.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="333.0" layoutY="331.0" mnemonicParsing="false" onAction="#p2exit" text="Exit" />
+                  <Button layoutX="218.0" layoutY="331.0" mnemonicParsing="false" onAction="#p2reset" text="Reset" />
+                  <Button layoutX="85.0" layoutY="331.0" mnemonicParsing="false" onAction="#p2save" text="Save" />
+                  <TextField fx:id="p2t1" layoutX="176.0" layoutY="84.0" prefHeight="25.0" prefWidth="348.0" promptText="User Name">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p2t2" layoutX="176.0" layoutY="158.0" prefHeight="25.0" prefWidth="348.0" promptText="password">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="p2t3" layoutX="234.0" layoutY="237.0" prefHeight="25.0" prefWidth="301.0" promptText="Re-password">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <CheckBox layoutX="17.0" layoutY="294.0" mnemonicParsing="false" onAction="#checkbos" text="password visible" />
+                  <TextField fx:id="p2t4" layoutX="170.0" layoutY="290.0" prefHeight="25.0" prefWidth="287.0" promptText="see password" />
+               </children>
+            </Pane>
+            <Pane fx:id="p3" prefHeight="383.0" prefWidth="588.0">
+               <children>
+                  <Label layoutX="37.0" layoutY="183.0" text="Email" />
+                  <Label layoutX="150.0" layoutY="13.0" text="welcome in mk">
+                     <font>
+                        <Font name="AR JULIAN" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="147.0" text="Address" />
+                  <Label layoutX="5.0" layoutY="113.0" text="post office code" />
+                  <Label layoutX="28.0" layoutY="75.0" text="Name" />
+                  <Label layoutX="37.0" layoutY="215.0" text="Number" />
+                  <TextField fx:id="p3tn" layoutX="66.0" layoutY="71.0" promptText="User name" />
+                  <TextField fx:id="p3tp" layoutX="99.0" layoutY="109.0" promptText="post code" />
+                  <TextField fx:id="p3ta" layoutX="96.0" layoutY="143.0" promptText="Address" />
+                  <TextField fx:id="p3te" layoutX="88.0" layoutY="179.0" promptText="Email" />
+                  <TextField fx:id="p3tnu" layoutX="106.0" layoutY="211.0" promptText="Number" />
+                  <CheckBox layoutX="30.0" layoutY="254.0" mnemonicParsing="false" onAction="#licence" text="licence" />
+                  <CheckBox layoutX="30.0" layoutY="290.0" mnemonicParsing="false" onAction="#emi" text="EMI" />
+                  <CheckBox layoutX="29.0" layoutY="356.0" mnemonicParsing="false" onAction="#rode_lience" text="Rode Licence" />
+                  <CheckBox layoutX="30.0" layoutY="329.0" mnemonicParsing="false" onAction="#check_money" text="Check Money" />
+                  <TextField fx:id="p3tl" layoutX="123.0" layoutY="250.0" promptText="Licence" />
+                  <TextField fx:id="p3temi" layoutX="140.0" layoutY="286.0" promptText="EMI" />
+                  <TextField fx:id="p3tc" layoutX="140.0" layoutY="325.0" promptText="Check Money" />
+                  <TextField fx:id="p3tr" layoutX="140.0" layoutY="357.0" promptText="Rode Lince" />
+                  <ComboBox fx:id="combox" layoutX="280.0" layoutY="84.0" onAction="#car" prefHeight="25.0" prefWidth="114.0" promptText="Car" />
+                  <ComboBox fx:id="combobox1" layoutX="458.0" layoutY="79.0" onAction="#cc" prefHeight="25.0" prefWidth="79.0" promptText="CC" />
+                  <TextField fx:id="p3tc1" layoutX="267.0" layoutY="122.0" prefHeight="25.0" prefWidth="139.0" promptText="Name of car" />
+                  <TextField fx:id="p3tcc" layoutX="423.0" layoutY="122.0" promptText="CC" />
+                  <Label layoutX="300.0" layoutY="192.0" text="Tota(Befor teax)" />
+                  <Label layoutX="310.0" layoutY="228.0" text="Teax" />
+                  <Label layoutX="308.0" layoutY="267.0" text="Total" />
+                  <TextField fx:id="p3tt" layoutX="406.0" layoutY="188.0" prefHeight="25.0" prefWidth="179.0" promptText="Tota(Befor teax)" />
+                  <TextField fx:id="p3tte" layoutX="356.0" layoutY="224.0" prefHeight="25.0" prefWidth="213.0" promptText="Teax" />
+                  <TextField fx:id="p3tto" layoutX="356.0" layoutY="263.0" prefHeight="25.0" prefWidth="213.0" promptText="Total" />
+                  <Button layoutX="316.0" layoutY="357.0" mnemonicParsing="false" onAction="#total" text="Total" />
+                  <Button layoutX="384.0" layoutY="357.0" mnemonicParsing="false" onAction="#p3reset" text="Reset" />
+                  <Button layoutX="458.0" layoutY="357.0" mnemonicParsing="false" onAction="#Scrept" text="Scrept" />
+                  <Button layoutX="520.0" layoutY="357.0" mnemonicParsing="false" onAction="#p3exit" text="Exit" />
+                  <Label fx:id="p3la" layoutX="14.0" layoutY="378.0" prefHeight="17.0" prefWidth="579.0" />
+               </children></Pane>
+            <Pane fx:id="p4" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="149.0" layoutY="14.0" text="welcome in mk">
+                     <font>
+                        <Font name="AR JULIAN" size="46.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="67.0" text="Total Information">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="p4t1" layoutX="242.0" layoutY="67.0" prefHeight="329.0" prefWidth="348.0" promptText="Total Information">
+                     <font>
+                        <Font name="System Italic" size="19.0" />
+                     </font>
+                  </TextArea>
+                  <Button layoutX="40.0" layoutY="352.0" mnemonicParsing="false" onAction="#p4exit" text="Exit" />
+                  <Button layoutX="107.0" layoutY="352.0" mnemonicParsing="false" onAction="#p4reset" text="Reset" />
+                  <Button layoutX="165.0" layoutY="352.0" mnemonicParsing="false" onAction="#Show" text="Show" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forth_apps.meas_management_system.FXMLDocumentController">
+   <children>
+      <StackPane layoutX="-3.0" prefHeight="496.0" prefWidth="597.0">
+         <children>
+            <Pane fx:id="p1" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="bodybg" />
+                  <String fx:value="label" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Button layoutX="183.0" layoutY="298.0" mnemonicParsing="false" onAction="#p1manager" prefHeight="56.0" prefWidth="95.0" text="Manager">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="339.0" layoutY="298.0" mnemonicParsing="false" onAction="#p1member" prefHeight="56.0" prefWidth="95.0" text="Member">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="p3" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <children>
+                  <Label layoutX="38.0" layoutY="104.0" text="User name">
+                     <font>
+                        <Font name="AR JULIAN" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="254.0" prefHeight="48.0" prefWidth="174.0" text="Password">
+                     <font>
+                        <Font name="AR JULIAN" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="64.0" layoutY="341.0" text="Re-Password">
+                     <font>
+                        <Font name="AR JULIAN" size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p3t1" layoutX="265.0" layoutY="98.0" prefHeight="48.0" prefWidth="317.0" promptText="User Name">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p3t2" layoutX="271.0" layoutY="256.0" prefHeight="48.0" prefWidth="317.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="p3t3" layoutX="271.0" layoutY="332.0" prefHeight="48.0" prefWidth="317.0" promptText="Re - Password">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="134.0" layoutY="430.0" mnemonicParsing="false" onAction="#p3save" prefHeight="33.0" prefWidth="78.0" text="Save" />
+                  <Button layoutX="296.0" layoutY="430.0" mnemonicParsing="false" onAction="#p3reset" prefHeight="33.0" prefWidth="78.0" text="Reset" />
+                  <Button layoutX="487.0" layoutY="18.0" mnemonicParsing="false" onAction="#p3exit" prefHeight="33.0" prefWidth="52.0" text="Exit" />
+               </children>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="p2" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <children>
+                  <Button layoutX="165.0" layoutY="441.0" mnemonicParsing="false" onAction="#p2login" prefHeight="25.0" prefWidth="59.0" text="Login" />
+                  <Button layoutX="292.0" layoutY="440.0" mnemonicParsing="false" onAction="#p2reset" text="Reset" />
+                  <Button layoutX="401.0" layoutY="437.0" mnemonicParsing="false" onAction="#p2signup" prefHeight="25.0" prefWidth="66.0" text="Signup" />
+                  <Button layoutX="519.0" layoutY="22.0" mnemonicParsing="false" onAction="#p2exit" text="Exit" />
+                  <Label layoutX="182.0" layoutY="229.0" prefHeight="44.0" prefWidth="136.0" text="User name">
+                     <font>
+                        <Font name="AR JULIAN" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="182.0" layoutY="312.0" prefHeight="44.0" prefWidth="140.0" text="Password">
+                     <font>
+                        <Font name="AR JULIAN" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p2t1" layoutX="351.0" layoutY="230.0" prefHeight="44.0" prefWidth="232.0" promptText="User name">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p2t2" layoutX="347.0" layoutY="312.0" prefHeight="25.0" prefWidth="240.0" promptText="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+               <styleClass>
+                  <String fx:value="root" />
+                  <String fx:value="label" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="p5" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <children>
+                  <Button layoutX="66.0" layoutY="150.0" mnemonicParsing="false" onAction="#p5account" prefHeight="44.0" prefWidth="78.0" text="Account" />
+                  <Button layoutX="220.0" layoutY="204.0" mnemonicParsing="false" onAction="#p5managerEvaluaton" prefHeight="56.0" prefWidth="128.0" text="Manager Evaluation" />
+                  <Button layoutX="417.0" layoutY="296.0" mnemonicParsing="false" onAction="#p5manager" prefHeight="44.0" prefWidth="78.0" text="Manager" />
+                  <Button layoutX="511.0" layoutY="19.0" mnemonicParsing="false" onAction="#p5exit" prefHeight="44.0" prefWidth="45.0" text="Exit" />
+               </children>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="la" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="p8" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="194.0" layoutY="230.0" text="User Name">
+                     <font>
+                        <Font name="AR DELANEY" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="194.0" layoutY="321.0" text="Password">
+                     <font>
+                        <Font name="AR DELANEY" size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p8t1" layoutX="342.0" layoutY="230.0" prefHeight="39.0" prefWidth="240.0" promptText="User Name">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p8t2" layoutX="342.0" layoutY="321.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="234.0" layoutY="430.0" mnemonicParsing="false" onAction="#p8login" text="Login" />
+                  <Button layoutX="372.0" layoutY="430.0" mnemonicParsing="false" onAction="#p8reset" text="Reset" />
+                  <Button layoutX="517.0" layoutY="30.0" mnemonicParsing="false" onAction="#p8exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p7" prefHeight="200.0" prefWidth="200.0" styleClass="pict" stylesheets="@style2.css">
+               <children>
+                  <Label layoutX="98.0" layoutY="75.0" text="Member ID" textFill="#1b09e0">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="106.0" layoutY="139.0" prefHeight="28.0" prefWidth="78.0" text="Deposit" textFill="#2a0add">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="95.0" layoutY="324.0" text="Total Deposit" textFill="#09eb34">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="95.0" layoutY="389.0" text="Total Cost" textFill="#0ff755">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p7t1" layoutX="281.0" layoutY="78.0" promptText="Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p7t2" layoutX="281.0" layoutY="141.0" prefHeight="31.0" prefWidth="187.0" promptText="Deposit">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p7t3" layoutX="281.0" layoutY="329.0" promptText="Total Deoposit">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p7t4" layoutX="281.0" layoutY="394.0" promptText="Total cost">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="522.0" layoutY="23.0" mnemonicParsing="false" onAction="#p7exit" text="Exit">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="142.0" layoutY="444.0" mnemonicParsing="false" onAction="#p7save" text="Save">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="295.0" layoutY="444.0" mnemonicParsing="false" onAction="#p7reset" text="Reset">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="p9" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="pict" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <TextField fx:id="p9t1" layoutX="310.0" layoutY="77.0" prefHeight="37.0" prefWidth="254.0" promptText="Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p9t2" layoutX="312.0" layoutY="210.0" prefHeight="39.0" prefWidth="254.0" promptText="Deposite">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p9t3" layoutX="312.0" layoutY="282.0" promptText="Cost">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="150.0" layoutY="79.0" text="Mmeber ID" textFill="#f60b0b">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="165.0" layoutY="209.0" text="Deposite" textFill="#0910d6">
+                     <font>
+                        <Font name="System Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="187.0" layoutY="275.0" text="Cost" textFill="#baf604">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="165.0" layoutY="437.0" mnemonicParsing="false" onAction="#p9show" prefHeight="25.0" prefWidth="66.0" text="Show" />
+                  <Button layoutX="525.0" layoutY="14.0" mnemonicParsing="false" onAction="#p9exit" text="Exit" />
+                  <Button layoutX="340.0" layoutY="437.0" mnemonicParsing="false" onAction="#p9reset" text="Reset" />
+               </children>
+            </Pane>
+            <Pane fx:id="p10" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="registration" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="27.0" layoutY="86.0" text="Member ID" textFill="#e8b509">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="133.0" text="Name" textFill="#f0b005">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="192.0" text="Phone" textFill="#f5ef07">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="236.0" text="Email" textFill="#f79d05">
+                     <font>
+                        <Font name="System Bold Italic" size="29.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="296.0" text="Address" textFill="#eb8607">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p10t1" layoutX="163.0" layoutY="83.0" promptText="Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p10t2" layoutX="163.0" layoutY="138.0" promptText="Name">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p10t3" layoutX="161.0" layoutY="188.0" promptText="Phone">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p10t4" layoutX="161.0" layoutY="245.0" promptText="Email">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p10t5" layoutX="160.0" layoutY="300.0" promptText="Address">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="171.0" layoutY="2.0" text="Add Member" textFill="#f60529">
+                     <font>
+                        <Font name="AR DELANEY" size="41.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="p10datepicker" layoutX="156.0" layoutY="358.0" promptText="Joning date" />
+                  <Label layoutX="15.0" layoutY="355.0" text="Joining date" textFill="#f48f03">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="p10img" fitHeight="150.0" fitWidth="200.0" layoutX="376.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="450.0" layoutY="288.0" mnemonicParsing="false" onAction="#p10select" text="Select" />
+                  <Button layoutX="130.0" layoutY="448.0" mnemonicParsing="false" onAction="#p10save" text="Save" />
+                  <Button layoutX="283.0" layoutY="448.0" mnemonicParsing="false" onAction="#p10reset" text="Reset" />
+                  <Button layoutX="524.0" layoutY="18.0" mnemonicParsing="false" onAction="#p10exit" text="Exit" />
+                  <Label fx:id="p10la" layoutX="394.0" layoutY="452.0" prefHeight="17.0" prefWidth="140.0" />
+               </children></Pane>
+            <Pane fx:id="p4" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <children>
+                  <Button layoutX="260.0" layoutY="327.0" mnemonicParsing="false" onAction="#p4account" prefHeight="44.0" prefWidth="78.0" text="Accout" />
+                  <Button layoutX="101.0" layoutY="242.0" mnemonicParsing="false" onAction="#p4member" prefHeight="44.0" prefWidth="78.0" text="Member" />
+                  <Button layoutX="271.0" layoutY="242.0" mnemonicParsing="false" onAction="#p4meal" prefHeight="44.0" prefWidth="59.0" text="Meal" />
+                  <Button layoutX="101.0" layoutY="327.0" mnemonicParsing="false" onAction="#p4dailyactivities" prefHeight="44.0" prefWidth="93.0" text="Daily Activities" />
+                  <Button layoutX="421.0" layoutY="323.0" mnemonicParsing="false" onAction="#p4totalcalculation" prefHeight="48.0" prefWidth="119.0" text="Total Calculation" />
+                  <Button layoutX="504.0" layoutY="12.0" mnemonicParsing="false" onAction="#p4exit" prefHeight="33.0" prefWidth="59.0" text="Exit" />
+               </children>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="bodybg" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="p11" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="find" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="208.0" layoutY="12.0" text="Find Member" textFill="#fc0303">
+                     <font>
+                        <Font name="AR ESSENCE" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p11t1" layoutX="89.0" layoutY="84.0" promptText="Give here Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p11t2" layoutX="89.0" layoutY="146.0" promptText="Name">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p11t3" layoutX="89.0" layoutY="208.0" promptText="Phone">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p11t4" layoutX="90.0" layoutY="278.0" promptText="Email">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p11t5" layoutX="89.0" layoutY="349.0" promptText="Address">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p11t6" layoutX="95.0" layoutY="408.0" promptText="Joning Date">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fx:id="p11img" fitHeight="150.0" fitWidth="200.0" layoutX="349.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="323.0" layoutY="87.0" mnemonicParsing="false" onAction="#p11search" text="Search" />
+                  <Button layoutX="523.0" layoutY="26.0" mnemonicParsing="false" onAction="#p11exit" text="Exit" />
+                  <Button layoutX="251.0" layoutY="457.0" mnemonicParsing="false" onAction="#p11reset" text="Reset" />
+               </children>
+            </Pane>
+            <Pane fx:id="p12" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="delete" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <TextField fx:id="p12t1" layoutX="175.0" layoutY="149.0" promptText="Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="130.0" layoutY="14.0" text="Delete Member" textFill="#00ff51">
+                     <font>
+                        <Font name="AR HERMANN" size="48.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="142.0" layoutY="360.0" mnemonicParsing="false" onAction="#p12delet" text="Delete" />
+                  <Button layoutX="525.0" layoutY="21.0" mnemonicParsing="false" onAction="#p12exit" text="Esit" />
+                  <Button layoutX="377.0" layoutY="360.0" mnemonicParsing="false" onAction="#p12reset" text="reset" />
+               </children>
+            </Pane>
+            <Pane fx:id="p13" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="registration" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="188.0" layoutY="16.0" text="Add Manager" textFill="#eb7705">
+                     <font>
+                        <Font name="AR CHRISTY" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p13t1" layoutX="114.0" layoutY="119.0" promptText="Manager ID">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p13t2" layoutX="114.0" layoutY="185.0" promptText="Name">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p13t3" layoutX="114.0" layoutY="248.0" promptText="Phone">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p13t4" layoutX="114.0" layoutY="307.0" promptText="Email">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p13t5" layoutX="114.0" layoutY="369.0" promptText="Address">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker fx:id="p13datepicker" layoutX="114.0" layoutY="423.0" prefHeight="25.0" prefWidth="187.0" promptText="Joning Date" />
+                  <ImageView fx:id="p13img" fitHeight="150.0" fitWidth="200.0" layoutX="361.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="435.0" layoutY="310.0" mnemonicParsing="false" onAction="#p13select" text="Select" />
+                  <Button layoutX="215.0" layoutY="457.0" mnemonicParsing="false" onAction="#p13save" text="Save" />
+                  <Button layoutX="309.0" layoutY="457.0" mnemonicParsing="false" onAction="#p13reset" text="reset" />
+                  <Button layoutX="509.0" layoutY="18.0" mnemonicParsing="false" onAction="#p13Exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p14" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="pic" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Button layoutX="49.0" layoutY="186.0" mnemonicParsing="false" onAction="#p14addmanager" text="Add Manager" />
+                  <Button layoutX="467.0" layoutY="186.0" mnemonicParsing="false" onAction="#p14detailsmanager" text="Details Manager" />
+                  <Button layoutX="531.0" layoutY="25.0" mnemonicParsing="false" onAction="#p14exit" text="Exit" />
+                  <Button layoutX="247.0" layoutY="446.0" mnemonicParsing="false" onAction="#p14deletemanager" text="Delete Manager" />
+               </children>
+            </Pane>
+            <Pane fx:id="p15" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="delete" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="176.0" layoutY="7.0" text="Delete Manager" textFill="#07e51a">
+                     <font>
+                        <Font name="AR CARTER" size="53.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p15t1" layoutX="159.0" layoutY="158.0" promptText="Give Manager ID">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font></TextField>
+                  <Button layoutX="176.0" layoutY="331.0" mnemonicParsing="false" onAction="#p15delete" text="Delete" />
+                  <Button layoutX="334.0" layoutY="331.0" mnemonicParsing="false" onAction="#p15reset" text="Reset" />
+                  <Button layoutX="504.0" layoutY="26.0" mnemonicParsing="false" onAction="#p15exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p16" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="find" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="145.0" layoutY="14.0" text="Manager Details" textFill="#00f265">
+                     <font>
+                        <Font name="Algerian" size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p16t1" layoutX="97.0" layoutY="92.0" prefHeight="25.0" prefWidth="174.0" promptText="Give Manager Id" />
+                  <TextField fx:id="p16t2" layoutX="97.0" layoutY="166.0" prefHeight="25.0" prefWidth="174.0" promptText="Name" />
+                  <TextField fx:id="p16t3" layoutX="97.0" layoutY="223.0" prefHeight="25.0" prefWidth="174.0" promptText="Phone" />
+                  <TextField fx:id="p16t4" layoutX="97.0" layoutY="296.0" prefHeight="25.0" prefWidth="174.0" promptText="Email" />
+                  <TextField fx:id="p16t5" layoutX="97.0" layoutY="362.0" prefHeight="25.0" prefWidth="174.0" promptText="Address" />
+                  <ImageView fx:id="p16img" fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="523.0" layoutY="20.0" mnemonicParsing="false" onAction="#p16exit" text="Exit" />
+                  <Button layoutX="177.0" layoutY="450.0" mnemonicParsing="false" onAction="#p16search" text="Search" />
+                  <Button layoutX="332.0" layoutY="450.0" mnemonicParsing="false" onAction="#p16reset" text="Reset" />
+                  <TextField fx:id="p16t6" layoutX="98.0" layoutY="411.0" prefHeight="25.0" prefWidth="174.0" promptText="Joning date" />
+               </children>
+            </Pane>
+            <Pane fx:id="p6" prefHeight="200.0" prefWidth="200.0" styleClass="pic" stylesheets="@style2.css">
+               <children>
+                  <Button layoutX="37.0" layoutY="165.0" mnemonicParsing="false" onAction="#p6addmember" prefHeight="45.0" prefWidth="174.0" text="Add Member">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="433.0" layoutY="177.0" mnemonicParsing="false" onAction="#p6findmember" prefHeight="48.0" prefWidth="160.0" text="Find Member">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="541.0" layoutY="18.0" mnemonicParsing="false" onAction="#p6exit" text="Exit" />
+                  <Button layoutX="189.0" layoutY="416.0" mnemonicParsing="false" onAction="#p6deletemember" prefHeight="45.0" prefWidth="120.0" text="Delete Member">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="p17" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="eval" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="145.0" layoutY="14.0" text="Manager Evaluation" textFill="#ed1b05">
+                     <font>
+                        <Font name="AR CENA" size="38.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="520.0" layoutY="28.0" mnemonicParsing="false" onAction="#p17exit" text="Exit" />
+                  <Button layoutX="167.0" layoutY="450.0" mnemonicParsing="false" onAction="#p17save" text="Save" />
+                  <Button layoutX="318.0" layoutY="450.0" mnemonicParsing="false" onAction="#p17reset" text="Reset" />
+                  <RadioButton fx:id="r1" layoutX="109.0" layoutY="281.0" mnemonicParsing="false" onAction="#p17group1" text="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="r11" layoutX="109.0" layoutY="323.0" mnemonicParsing="false" onAction="#p17group2" text="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group2" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="r111" layoutX="109.0" layoutY="364.0" mnemonicParsing="false" onAction="#p17group3" text="1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="group3" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="r2" layoutX="207.0" layoutY="281.0" mnemonicParsing="false" onAction="#p17group1" text="2" toggleGroup="$group1" />
+                  <RadioButton fx:id="r3" layoutX="300.0" layoutY="281.0" mnemonicParsing="false" onAction="#p17group1" text="3" toggleGroup="$group1" />
+                  <RadioButton fx:id="r4" layoutX="372.0" layoutY="281.0" mnemonicParsing="false" onAction="#p17group1" text="4" toggleGroup="$group1" />
+                  <RadioButton fx:id="r22" layoutX="205.0" layoutY="323.0" mnemonicParsing="false" onAction="#p17group2" text="2" toggleGroup="$group2" />
+                  <RadioButton fx:id="r222" layoutX="207.0" layoutY="364.0" mnemonicParsing="false" onAction="#p17group3" text="2" toggleGroup="$group3" />
+                  <RadioButton fx:id="r33" layoutX="301.0" layoutY="323.0" mnemonicParsing="false" onAction="#p17group2" text="3" toggleGroup="$group2" />
+                  <RadioButton fx:id="r333" layoutX="302.0" layoutY="364.0" mnemonicParsing="false" onAction="#p17group3" text="3" toggleGroup="$group3" />
+                  <RadioButton fx:id="r44" layoutX="372.0" layoutY="322.0" mnemonicParsing="false" onAction="#p17group2" text="4" toggleGroup="$group2" />
+                  <RadioButton fx:id="r444" layoutX="372.0" layoutY="364.0" mnemonicParsing="false" onAction="#p17group3" text="4" toggleGroup="$group3" />
+                  <RadioButton fx:id="r5" layoutX="449.0" layoutY="281.0" mnemonicParsing="false" onAction="#p17group1" text="5" toggleGroup="$group1" />
+                  <RadioButton fx:id="r55" layoutX="449.0" layoutY="322.0" mnemonicParsing="false" onAction="#p17group2" text="5" toggleGroup="$group2" />
+                  <RadioButton fx:id="r555" layoutX="449.0" layoutY="364.0" mnemonicParsing="false" onAction="#p17group3" text="5" toggleGroup="$group3" />
+                  <TextField fx:id="p17t1" layoutX="499.0" layoutY="277.0" prefHeight="25.0" prefWidth="71.0" promptText="Breakfast" />
+                  <TextField fx:id="p17t2" layoutX="499.0" layoutY="318.0" prefHeight="25.0" prefWidth="71.0" promptText="Launch" />
+                  <TextField fx:id="p17t3" layoutX="499.0" layoutY="360.0" prefHeight="25.0" prefWidth="71.0" promptText="Dinner" />
+                  <Label layoutX="14.0" layoutY="281.0" text="Breakfast Rating" />
+                  <Label layoutX="19.0" layoutY="322.0" text="Lunch Rating" />
+                  <Label layoutX="19.0" layoutY="364.0" text="Dinner Rating" />
+                  <TextField fx:id="p17t4" layoutX="198.0" layoutY="229.0" promptText="Give here Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker fx:id="p17datepicker" layoutX="449.0" layoutY="229.0" prefHeight="25.0" prefWidth="129.0" promptText="Evaluation Date" />
+               </children>
+            </Pane>
+            <Pane fx:id="p19" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="activites" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="174.0" layoutY="14.0" text="Daily Activities">
+                     <font>
+                        <Font name="AR DELANEY" size="38.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p19t1" layoutX="69.0" layoutY="143.0" promptText="Give here Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p19t2" layoutX="67.0" layoutY="230.0" promptText="Bazar Name">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p19t3" layoutX="69.0" layoutY="301.0" prefHeight="42.0" prefWidth="214.0" promptText="Bazar Cost">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker fx:id="p19datepicker" layoutX="389.0" layoutY="143.0" prefHeight="39.0" prefWidth="174.0" promptText="Bazar Date" />
+                  <Button layoutX="523.0" layoutY="28.0" mnemonicParsing="false" onAction="#p19exit" text="Exit" />
+                  <Button layoutX="176.0" layoutY="440.0" mnemonicParsing="false" onAction="#p19save" text="Save" />
+                  <Button layoutX="337.0" layoutY="440.0" mnemonicParsing="false" onAction="#p19reset" text="Reser" />
+               </children>
+            </Pane>
+            <Pane fx:id="p20" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="calculation" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="122.0" layoutY="6.0" text="Total Calculation" textFill="#f08c07">
+                     <font>
+                        <Font name="AR DELANEY" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p20t1" layoutX="142.0" layoutY="141.0" promptText="Give here Member ID" />
+                  <TextField fx:id="p20t2" layoutX="142.0" layoutY="194.0" promptText="Deposite" />
+                  <TextField fx:id="p20t3" layoutX="142.0" layoutY="248.0" promptText="Total meal" />
+                  <TextField fx:id="p20t5" layoutX="142.0" layoutY="347.0" promptText="Reminaing" />
+                  <TextField fx:id="p20t6" layoutX="398.0" layoutY="291.0" promptText="Total deposite" />
+                  <TextField fx:id="p20t4" layoutX="142.0" layoutY="303.0" promptText="Cost " />
+                  <TextField fx:id="p20t7" layoutX="398.0" layoutY="248.0" promptText="Meal Rate" />
+                  <Button layoutX="521.0" layoutY="20.0" mnemonicParsing="false" onAction="#p20exit" text="Exit" />
+                  <Button layoutX="190.0" layoutY="451.0" mnemonicParsing="false" onAction="#p20show" text="Show" />
+                  <Button layoutX="346.0" layoutY="451.0" mnemonicParsing="false" onAction="#p20reset" text="Reset" />
+                  <TextField fx:id="p20t8" layoutX="398.0" layoutY="341.0" promptText="Total Remainning" />
+                  <Label layoutX="43.0" layoutY="145.0" text="Member ID" />
+                  <Label layoutX="43.0" layoutY="198.0" text="Deposite" />
+                  <Label layoutX="43.0" layoutY="252.0" text="Total Meal" />
+                  <Label layoutX="43.0" layoutY="307.0" text="Cost" />
+                  <Label layoutX="43.0" layoutY="351.0" text="Remaining" />
+                  <Label layoutX="325.0" layoutY="252.0" text="Meal Rate" />
+                  <Label layoutX="308.0" layoutY="299.0" text="Total Deposite" />
+                  <Label layoutX="300.0" layoutY="345.0" text="Total Remainning" />
+                  <TextField fx:id="p20t9" layoutX="398.0" layoutY="389.0" promptText="Total Cost" />
+                  <Label layoutX="308.0" layoutY="393.0" text="Total Cost" textFill="#f40909">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p18" prefHeight="200.0" prefWidth="200.0" stylesheets="@style2.css">
+               <styleClass>
+                  <String fx:value="data" />
+                  <String fx:value="button" />
+               </styleClass>
+               <children>
+                  <Label layoutX="154.0" layoutY="7.0" text="Calculating Meal" textFill="#2f00ff">
+                     <font>
+                        <Font name="AR DARLING" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p18t1" layoutX="123.0" layoutY="127.0" promptText="Give here Member ID">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p18t2" layoutX="130.0" layoutY="206.0" prefHeight="42.0" prefWidth="160.0" promptText="Day number like (d1)">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="p18t3" layoutX="134.0" layoutY="276.0" prefHeight="39.0" prefWidth="160.0" promptText="Total Meal of a single day">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="520.0" layoutY="32.0" mnemonicParsing="false" onAction="#p18exit" text="Exit" />
+                  <Button layoutX="167.0" layoutY="431.0" mnemonicParsing="false" onAction="#p18save" text="Save" />
+                  <Button layoutX="348.0" layoutY="431.0" mnemonicParsing="false" onAction="#p18reset" text="Reset" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+.button{
+        -fx-background-color: #99ccff;
+        
+    }
+    
+    .root{
+        -fx-background-image: url("m.jpeg");
+    -fx-background-size: 100% 100%
+    }
+    .bodybg{
+        -fx-background-image: url("h.png");
+        -fx-background-size: 100% 100%
+    }
+    .la{
+        -fx-background-image: url("j.png");
+        -fx-background-size: 100% 100%
+    }
+    .pic{
+        -fx-background-image: url("a.jpg");
+        -fx-background-size: 100% 100%
+    }
+    .pict{
+        -fx-background-image: url("b.jpeg");
+    -fx-background-size: 100% 100%
+    }
+    .registration{
+        -fx-background-image: url("registration.jpg");
+        -fx-background-size: 100% 100%;
+    }
+    .find{
+        -fx-background-image:url("find.jpeg");
+        -fx-background-size:100% 100%;
+    }
+    .delete{
+        -fx-background-image:url("delete.jpg");
+        -fx-background-size:100% 100%;
+    }
+    .eval{
+        -fx-background-image:url("eval.jpg");
+        -fx-background-size:100% 100%;
+    }
+    .data{
+        -fx-background-image:url("data.jpg");
+        -fx-background-size:100% 100%;
+    }
+    .activites{
+        -fx-background-image:url("activities.png");
+        -fx-background-size:100% 100%;
+    }
+    .calculation{
+        -fx-background-image:url("calculation.jpg");
+        -fx-background-size:100% 100%;
+    }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <TextField fx:id="t1" alignment="CENTER_RIGHT" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="275.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="8.0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="121.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="7" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="121.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="8" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="121.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="9" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="175.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="4" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="175.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="5" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="175.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="6" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="175.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#oparation" text="*" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="221.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="1" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="264.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="0" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="221.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="2" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="264.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="." />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="221.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#digit" text="3" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="221.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#oparation" text="-" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="264.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#oparation" text="+" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="264.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#oparation" text="/" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="121.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#equql" text="=" />
+      <Button layoutX="174.0" layoutY="84.0" mnemonicParsing="false" onAction="#reset" text="AC" />
+   </children>
+</AnchorPane>

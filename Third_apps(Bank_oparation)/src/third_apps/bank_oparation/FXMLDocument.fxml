@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="third_apps.bank_oparation.FXMLDocumentController">
+   <children>
+      <StackPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Pane fx:id="p2" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="174.0" layoutY="23.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="81.0" layoutY="107.0" text="User name">
+                     <font>
+                        <Font name="AR DELANEY" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="81.0" layoutY="183.0" text="Password">
+                     <font>
+                        <Font name="AR DELANEY" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="262.0" text="Re-password">
+                     <font>
+                        <Font name="AR ESSENCE" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="p2l2" layoutX="24.0" layoutY="354.0" prefHeight="32.0" prefWidth="566.0" />
+                  <TextField fx:id="p2t1" layoutX="174.0" layoutY="87.0" prefHeight="41.0" prefWidth="289.0" promptText="User name">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p2t2" layoutX="174.0" layoutY="171.0" prefHeight="25.0" prefWidth="289.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="p2t3" layoutX="174.0" layoutY="248.0" prefHeight="25.0" prefWidth="289.0" promptText="Re-Password">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="131.0" layoutY="321.0" mnemonicParsing="false" onAction="#p2save" text="Save" />
+                  <Button layoutX="267.0" layoutY="321.0" mnemonicParsing="false" onAction="#p2reset" text="reset" />
+                  <Button layoutX="411.0" layoutY="321.0" mnemonicParsing="false" onAction="#p2Exit" text="Exit" />
+               </children>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="p1" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="173.0" layoutY="23.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="108.0" text="User Name">
+                     <font>
+                        <Font name="AR DELANEY" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="59.0" layoutY="241.0" prefHeight="23.0" prefWidth="66.0" text="Password">
+                     <font>
+                        <Font name="AR DELANEY" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="p1l1" layoutX="23.0" layoutY="359.0" prefHeight="23.0" prefWidth="555.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p1t1" layoutX="168.0" layoutY="86.0" prefHeight="60.0" prefWidth="289.0" promptText="User name">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="p1t2" layoutX="177.0" layoutY="226.0" prefHeight="25.0" prefWidth="289.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold Italic" size="28.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="73.0" layoutY="321.0" mnemonicParsing="false" onAction="#login" text="Login" />
+                  <Button layoutX="208.0" layoutY="321.0" mnemonicParsing="false" onAction="#p1reset" text="Reset" />
+                  <Button layoutX="350.0" layoutY="321.0" mnemonicParsing="false" onAction="#signup" text="Signup" />
+               </children>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="p5" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="143.0" layoutY="24.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="99.0" prefHeight="25.0" prefWidth="555.0" text="* This is a trustfull and qualityful bank." />
+                  <Label layoutX="48.0" layoutY="133.0" text="* JONIYED BHUIYAN is the owner of this bank" />
+                  <Label layoutX="40.0" layoutY="158.0" text="* There has two type of account " />
+                  <Label layoutX="57.0" layoutY="175.0" text="1. Deposit Account" />
+                  <Label layoutX="55.0" layoutY="192.0" text="2. Running Account" />
+                  <Label layoutX="40.0" layoutY="220.0" text="In this bank you can take loan for 10% interest" />
+                  <Label layoutX="41.0" layoutY="254.0" text="Other information will be found in our reception" />
+                  <Button layoutX="534.0" layoutY="355.0" mnemonicParsing="false" onAction="#p5exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p7" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="180.0" layoutY="14.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="508.0" layoutY="361.0" mnemonicParsing="false" onAction="#p7exit" text="Exit" />
+                  <Label layoutX="84.0" layoutY="81.0" text="There are tewo type of Account" />
+                  <Label layoutX="84.0" layoutY="109.0" text="1. Deposite Accout" />
+                  <Label layoutX="82.0" layoutY="134.0" text="2. Running Account" />
+                  <Label layoutX="37.0" layoutY="166.0" text="Deposite Account :- ">
+                     <font>
+                        <Font name="AR ESSENCE" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="153.0" layoutY="167.0" text="* In this accout you can't withdraw your money at any time" />
+                  <Label layoutX="153.0" layoutY="185.0" text="* There has some fixed time to withdraw your money" />
+                  <Label layoutX="153.0" layoutY="202.0" text="* This bank will give you 10 % interest per year" />
+                  <Label layoutX="31.0" layoutY="235.0" text="Running Account :-">
+                     <font>
+                        <Font name="AR ESSENCE" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="151.0" layoutY="236.0" text="* In this account you can withdraw money at any time" />
+                  <Label layoutX="151.0" layoutY="261.0" text="* In this account you have to pay some money to running your account" />
+                  <Label layoutX="153.0" layoutY="286.0" text="* This payment will deduct anully" />
+               </children>
+            </Pane>
+            <Pane fx:id="p6" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="165.0" layoutY="14.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#p6exit" text="Exit" />
+                  <Label layoutX="58.0" layoutY="111.0" prefHeight="27.0" prefWidth="473.0" text="What type of Account you want to open">
+                     <font>
+                        <Font name="AR DESTINE" size="23.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="113.0" layoutY="224.0" mnemonicParsing="false" onAction="#p6DepositeAccount" text="Deposit Account" />
+                  <Button layoutX="295.0" layoutY="224.0" mnemonicParsing="false" onAction="#p6runningAccount" text="Running Account" />
+               </children>
+            </Pane>
+            <Pane fx:id="p4" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="152.0" layoutY="14.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="524.0" layoutY="361.0" mnemonicParsing="false" onAction="#p4exit" text="Exit" />
+                  <Label layoutX="39.0" layoutY="89.0" prefHeight="25.0" prefWidth="100.0" text="Account Number">
+                     <font>
+                        <Font name="AR DESTINE" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="p4t1" layoutX="167.0" layoutY="89.0" prefHeight="25.0" prefWidth="311.0" promptText="Account Number">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="498.0" layoutY="89.0" mnemonicParsing="false" onAction="#p4serch" text="Search" />
+                  <TextArea fx:id="p4t2" layoutX="182.0" layoutY="130.0" prefHeight="247.0" prefWidth="289.0" promptText="Information" />
+                  <Label layoutX="43.0" layoutY="144.0" prefHeight="19.0" prefWidth="97.0" text="Information">
+                     <font>
+                        <Font name="AR DESTINE" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="p4l4" layoutX="39.0" layoutY="378.0" prefHeight="17.0" prefWidth="473.0" />
+                  <Button layoutX="515.0" layoutY="285.0" mnemonicParsing="false" onAction="#p4reset" text="Reset" />
+               </children>
+            </Pane>
+            <Pane fx:id="p9" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="150.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="78.0" text="Name" />
+                  <Label layoutX="15.0" layoutY="107.0" text="Father/Husbend" />
+                  <Label layoutX="52.0" layoutY="146.0" text="Address" />
+                  <Label layoutX="54.0" layoutY="184.0" text="Nomini" />
+                  <Label layoutX="74.0" layoutY="218.0" text="Email" />
+                  <Label layoutX="71.0" layoutY="252.0" text="Phone" />
+                  <Label layoutX="78.0" layoutY="295.0" text="NID" />
+                  <TextField fx:id="p9t1" layoutX="111.0" layoutY="74.0" prefHeight="25.0" prefWidth="332.0" promptText="Name" />
+                  <TextField fx:id="p9t2" layoutX="111.0" layoutY="106.0" prefHeight="25.0" prefWidth="332.0" promptText="Father/Husbend" />
+                  <TextField fx:id="p9t3" layoutX="111.0" layoutY="142.0" prefHeight="25.0" prefWidth="332.0" promptText="Address" />
+                  <TextField fx:id="p9t4" layoutX="113.0" layoutY="180.0" prefHeight="25.0" prefWidth="332.0" promptText="Nomini" />
+                  <TextField fx:id="p9t5" layoutX="113.0" layoutY="214.0" prefHeight="25.0" prefWidth="332.0" promptText="Emil" />
+                  <TextField fx:id="p9t6" layoutX="113.0" layoutY="248.0" prefHeight="25.0" prefWidth="332.0" promptText="Phone" />
+                  <TextField fx:id="p9t7" layoutX="111.0" layoutY="291.0" prefHeight="25.0" prefWidth="332.0" promptText="NID" />
+                  <Button layoutX="497.0" layoutY="106.0" mnemonicParsing="false" onAction="#p9save" text="Save" />
+                  <Button layoutX="495.0" layoutY="168.0" mnemonicParsing="false" onAction="#p9reset" text="Reset" />
+                  <Button layoutX="497.0" layoutY="248.0" mnemonicParsing="false" onAction="#p9exit" text="Exit" />
+                  <Label layoutX="74.0" layoutY="330.0" text="Time" />
+                  <TextField fx:id="p9t8" layoutX="113.0" layoutY="326.0" prefHeight="25.0" prefWidth="97.0" promptText="Time" />
+                  <TextField fx:id="p9t9" layoutX="440.0" layoutY="49.0" promptText="Account number" />
+                  <Label layoutX="460.0" layoutY="19.0" text="Account Number" />
+               </children>
+            </Pane>
+            <Pane fx:id="p8" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="161.0" layoutY="26.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="526.0" layoutY="354.0" mnemonicParsing="false" onAction="#p8exit" text="Exit" />
+                  <Label layoutX="43.0" layoutY="80.0" text="Name" />
+                  <Label layoutX="7.0" layoutY="115.0" text="Father/Husbend" />
+                  <Label layoutX="43.0" layoutY="151.0" text="Address" />
+                  <Label layoutX="43.0" layoutY="192.0" text="Nomini" />
+                  <Label layoutX="43.0" layoutY="228.0" text="Email" />
+                  <Label layoutX="43.0" layoutY="264.0" text="Phone" />
+                  <Label layoutX="43.0" layoutY="295.0" text="NID" />
+                  <TextField fx:id="p8t1" layoutX="100.0" layoutY="76.0" prefHeight="25.0" prefWidth="332.0" promptText="Name" />
+                  <TextField fx:id="p8t2" layoutX="100.0" layoutY="111.0" prefHeight="25.0" prefWidth="332.0" promptText="Father/Husbend" />
+                  <TextField fx:id="p8t3" layoutX="100.0" layoutY="147.0" prefHeight="25.0" prefWidth="332.0" promptText="Address" />
+                  <TextField fx:id="p8t4" layoutX="100.0" layoutY="188.0" prefHeight="25.0" prefWidth="332.0" promptText="Nomini" />
+                  <TextField fx:id="p8t5" layoutX="100.0" layoutY="224.0" prefHeight="25.0" prefWidth="332.0" promptText="Emil" />
+                  <TextField fx:id="p8t6" layoutX="100.0" layoutY="260.0" prefHeight="25.0" prefWidth="332.0" promptText="Phone" />
+                  <TextField fx:id="p8t7" layoutX="100.0" layoutY="291.0" prefHeight="25.0" prefWidth="332.0" promptText="NID" />
+                  <Button layoutX="93.0" layoutY="342.0" mnemonicParsing="false" onAction="#p8save" text="Save" />
+                  <Button layoutX="206.0" layoutY="342.0" mnemonicParsing="false" onAction="#p8reset" text="Reset" />
+                  <Label layoutX="470.0" layoutY="18.0" text="Account Number" />
+                  <TextField fx:id="p8t8" layoutX="441.0" layoutY="41.0" promptText="Account number" />
+               </children>
+            </Pane>
+            <Pane fx:id="p10" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="56.0" layoutY="119.0" text="Account Number" />
+                  <TextField fx:id="p10t1" layoutX="226.0" layoutY="115.0" prefHeight="25.0" prefWidth="204.0" promptText="Account Numner">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="226.0" layoutY="283.0" mnemonicParsing="false" onAction="#p10OK" text="OK" />
+                  <Button layoutX="353.0" layoutY="283.0" mnemonicParsing="false" onAction="#P10reset" text="Rsset" />
+                  <Button layoutX="551.0" layoutY="361.0" mnemonicParsing="false" onAction="#p10exit" text="Exit" />
+                  <Label layoutX="167.0" layoutY="1.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="p3" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <children>
+                  <Label layoutX="173.0" layoutY="24.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#p3exit" text="Exit" />
+                  <Button layoutX="88.0" layoutY="95.0" mnemonicParsing="false" onAction="#p3chackprofile" text="Chack profile" />
+                  <Button layoutX="83.0" layoutY="175.0" mnemonicParsing="false" onAction="#p3createaccount" text="Create account" />
+                  <Button layoutX="95.0" layoutY="267.0" mnemonicParsing="false" onAction="#p3transaction" text="Transaction" />
+                  <Button layoutX="258.0" layoutY="95.0" mnemonicParsing="false" onAction="#p3aboutbank" text="About bank" />
+                  <Button layoutX="252.0" layoutY="175.0" mnemonicParsing="false" onAction="#p3aboutaccount" text="About Account" />
+                  <Button layoutX="251.0" layoutY="267.0" mnemonicParsing="false" onAction="#p3deleteaccout" text="Delete Account" />
+               </children>
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+            </Pane>
+            <Pane fx:id="p11" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="162.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="101.0" layoutY="119.0" mnemonicParsing="false" onAction="#p11deposite" text="Deposite" />
+                  <Button layoutX="202.0" layoutY="119.0" mnemonicParsing="false" onAction="#p11Withdraw" text="Withdraw" />
+                  <Button layoutX="319.0" layoutY="119.0" mnemonicParsing="false" onAction="#p11loan" text="Loan" />
+                  <Button layoutX="427.0" layoutY="119.0" mnemonicParsing="false" onAction="#p11loanpayment" text="Loan Payment" />
+                  <Button layoutX="517.0" layoutY="361.0" mnemonicParsing="false" onAction="#p11Exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p12" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="151.0" layoutY="1.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="87.0" layoutY="112.0" text="Account Number" />
+                  <Label layoutX="87.0" layoutY="192.0" text="Deposite Amount" />
+                  <Label layoutX="87.0" layoutY="263.0" text="Total Amount" />
+                  <TextField fx:id="p12t1" layoutX="226.0" layoutY="108.0" promptText="Account Number" />
+                  <TextField fx:id="p12t2" layoutX="226.0" layoutY="188.0" promptText="Deposite Amont" />
+                  <TextField fx:id="p12t3" layoutX="226.0" layoutY="251.0" promptText="Total Amount" />
+                  <Button layoutX="97.0" layoutY="325.0" mnemonicParsing="false" onAction="#p12Save" text="Save" />
+                  <Button layoutX="220.0" layoutY="325.0" mnemonicParsing="false" onAction="#p12reset" text="Reset" />
+                  <Button layoutX="349.0" layoutY="325.0" mnemonicParsing="false" onAction="#p12exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p15" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="151.0" layoutY="2.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="107.0" text="Account Number" />
+                  <Label layoutX="61.0" layoutY="192.0" text="Amount of Money" />
+                  <Label layoutX="61.0" layoutY="273.0" text="Total Loan" />
+                  <TextField fx:id="p15t1" layoutX="194.0" layoutY="103.0" promptText="Account Number" />
+                  <TextField fx:id="p15t2" layoutX="194.0" layoutY="188.0" promptText="Amount of Money" />
+                  <TextField fx:id="p15t3" layoutX="194.0" layoutY="269.0" promptText="Total Loan" />
+                  <Button layoutX="80.0" layoutY="333.0" mnemonicParsing="false" onAction="#p15ok" text="OK" />
+                  <Button layoutX="206.0" layoutY="333.0" mnemonicParsing="false" onAction="#p15reset" text="Reset" />
+                  <Button layoutX="357.0" layoutY="333.0" mnemonicParsing="false" onAction="#p15exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p13" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="166.0" layoutY="4.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="109.0" text="Account Number" />
+                  <Label layoutX="69.0" layoutY="192.0" text="Withdraw Amount" />
+                  <Label layoutX="69.0" layoutY="270.0" text="Total Amount" />
+                  <TextField fx:id="p13t1" layoutX="194.0" layoutY="105.0" promptText="Account Number" />
+                  <TextField fx:id="p13t2" layoutX="194.0" layoutY="188.0" promptText="Withdraw Amont" />
+                  <TextField fx:id="p13t3" layoutX="194.0" layoutY="266.0" promptText="Total Amount" />
+                  <Button layoutX="91.0" layoutY="323.0" mnemonicParsing="false" onAction="#p13ok" text="OK" />
+                  <Button layoutX="236.0" layoutY="323.0" mnemonicParsing="false" onAction="#p13reset" text="Reset" />
+                  <Button layoutX="398.0" layoutY="323.0" mnemonicParsing="false" onAction="#p13exit" text="Exit" />
+               </children>
+            </Pane>
+            <Pane fx:id="p14" prefHeight="200.0" prefWidth="200.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="button" />
+                  <String fx:value="label" />
+                  <String fx:value="root" />
+               </styleClass>
+               <children>
+                  <Label layoutX="157.0" layoutY="14.0" prefHeight="45.0" prefWidth="258.0" text="Wellcome in MK" textFill="#eb0c8b">
+                     <font>
+                        <Font name="AR DECODE" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="127.0" text="Account Number" />
+                  <Label layoutX="75.0" layoutY="192.0" text="Amount of Loan" />
+                  <Label layoutX="75.0" layoutY="253.0" text="Expiring Date of Loan(year)" />
+                  <Label layoutX="75.0" layoutY="321.0" text="Total Loan" />
+                  <TextField fx:id="p14t1" layoutX="300.0" layoutY="123.0" promptText="Acccount Number" />
+                  <TextField fx:id="p14t2" layoutX="300.0" layoutY="188.0" promptText="Amount of loan" />
+                  <TextField fx:id="p14t3" layoutX="300.0" layoutY="249.0" promptText="Expiring data of loan(year)" />
+                  <TextField fx:id="p14t4" layoutX="300.0" layoutY="317.0" promptText="total loan" />
+                  <Button layoutX="94.0" layoutY="361.0" mnemonicParsing="false" onAction="#p14ok" text="OK" />
+                  <Button layoutX="207.0" layoutY="361.0" mnemonicParsing="false" onAction="#p14reset" text="Reset" />
+                  <Button layoutX="334.0" layoutY="361.0" mnemonicParsing="false" onAction="#p14exit" text="Exit" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
